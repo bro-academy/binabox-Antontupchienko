@@ -1,3 +1,3 @@
-# binabox-Antontupchienko git init
+# binabox-Antontupchienko
 Student: Anton
 Mentor: Hanna Puiman
