@@ -132,3 +132,15 @@ footer {
   line-height: 48px;
 }
 
+.tag {
+  display: inline-block;
+  width: 39px;
+  height: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0;
+  text-align: right;
+  color: rgba(2, 101, 220, 1);
+}
