@@ -8,16 +8,11 @@ body {
   letter-spacing: 0.5px;
 }
 
- page {
-  background-color: rgba(13, 13, 21, 1)
- }
-
 p {
   font-family: 'Poppins', Arial, sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 28px;
-  letter-spacing: 0;
   color: rgba(217, 217, 217, 1);
 }
 
@@ -41,17 +36,17 @@ button {
 
 dd {
   font-weight: 400;
-  color: rgba(245, 248, 251, 1)
+  color: rgba(245, 248, 251, 1);
 }
 
 time {
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
-  color: rgba(239, 245, 250, 0.82)
+  color: rgba(239, 245, 250, 0.82);
 }
 
-hh1 {
+h1 {
   font-family: 'Bakbak One', Arial, sans-serif;
   font-weight: 400;
   font-size: 52px;
@@ -67,6 +62,7 @@ h2, h3 {
   line-height: 48px;
   letter-spacing: -0.5px;
   color: rgba(245, 248, 251, 1);
+  text-align: center;
 }
 
 summary {
@@ -130,15 +126,7 @@ article a {
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
-  letter-spacing: 0;
   text-align: right;
-}
-
-.header__login-icon { 
-  background-color: rgba(2, 101, 220, 1);
-  font-size: 18px;  
-  font-weight: 600;
-  line-height: 28px;
 }
 
 .btn__primary--style {
@@ -177,7 +165,6 @@ article a {
 }
 
 .catalog__item,
-.blog-article,
 .person-card,
 .faq__item,
 .sidebar section {
@@ -215,7 +202,7 @@ article a {
 
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
 }
 
 .post__quote-text {
@@ -223,13 +210,21 @@ article a {
   font-weight: 400;
   font-size: 28px;
   line-height: 36px;
-  letter-spacing: 0;
   color: rgba(248, 247, 255, 1);
 }
 
+.post__quote-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
 .post__quote-icon {
-  width: 32px;
-  height: 32px;
+  width: 15px;
+  height: 15px;
+  opacity: 0.49;
+  display: block;
 }
 
 .post__quote-rate {
@@ -237,16 +232,15 @@ article a {
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
-  color: rgba(248, 247, 255, 1);
+  color: rgba(239, 245, 250, 0.82);
 }
 
 .post__quote-cite {
-  font-family: 'Bakbak One', Arial, sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  opacity: 0.9;
-  align-self: flex-end;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(248, 247, 255, 1);
 }
 
 .sidebar {
@@ -267,7 +261,6 @@ article a {
   font-size: 52px;
   line-height: 62px;
   letter-spacing: -0.5px;
-  vertical-align: bottom;
 }
 
 .hero__stat-label {
@@ -276,8 +269,7 @@ article a {
   font-style: normal;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0;
-  vertical-align: bottom;
+  color: rgba(239, 245, 250, 0.82);
 }
 
 .product__name {
@@ -286,7 +278,6 @@ article a {
   font-style: normal;
   font-size: 20px;
   line-height: 28px;
-  letter-spacing: 0;
   color: rgba(239, 245, 250, 0.82);
 }
 
@@ -315,7 +306,6 @@ article a {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  letter-spacing: 0;
   color: rgba(245, 248, 251, 1);
 }
 
@@ -325,7 +315,6 @@ article a {
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
-  letter-spacing: 0;
   color: rgba(245, 248, 251, 1);
 }
 
@@ -341,7 +330,6 @@ figcaption {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0;
   color: rgba(248, 247, 255, 1);
   margin-top: 8px;
 }
@@ -358,10 +346,73 @@ figcaption {
   line-height: 28px;
 }
 
-.header__search,
-.header__discord {
+.header__btn--search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  width: 188px;
+  height: 48px;
+  padding: 8px 12px;
+
+  background-color: rgba(13, 13, 21, 1);
   border: 2px solid rgba(208, 215, 251, 0.17);
-  border-radius: 2px;
+  border-radius: 0;
+
+  color: rgba(245, 248, 251, 1);
+}
+
+.header__btn--search .header__icon {
+  width: 15px;
+  height: 15px;
+  display: block;
+}
+
+.header__discord {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  width: 150px;
+  height: 48px;
+  padding: 10px 24px;
+
+  background-color: transparent;
+  border: 2px solid rgba(208, 215, 251, 0.17);
+  border-radius: 0;
+
+  color: rgba(245, 248, 251, 1);
+}
+
+.header__login-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  width: 134px;
+  height: 48px;
+  padding: 10px 24px;
+
+  background-color: rgba(2, 101, 220, 1);
+  border: none;
+  cursor: pointer;
+}
+
+.header__login-btn .header__login-icon {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+.header__login-btn .header__login-text {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(245, 248, 251, 1);
 }
 
 .catalog__title {
@@ -369,7 +420,6 @@ figcaption {
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
-  letter-spacing: 0;
   color: rgba(248, 247, 255, 1);
 }
 
@@ -385,4 +435,63 @@ figcaption {
   line-height: 28px;
   color: rgba(245, 248, 251, 1);
   cursor: pointer;
+}
+
+ .page {
+  background-color: rgba(13, 13, 21, 1);
+ }
+
+.header__nav-list,
+.footer__nav-list,
+.footer__social-list,
+.breadcrumbs__list,
+.sidebar__list,
+.sidebar__tags,
+.post__list,
+.post__features,
+.post__tags-list,
+.post__share-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__nav-title {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: rgba(245, 248, 251, 1);
+}
+
+.footer__copyright {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(245, 248, 251, 1);
+  text-align: right;
+}
+
+.post-section {
+  background-color: rgba(29, 28, 40, 1);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.sidebar__title {
+  font-family: 'Bakbak One', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: rgba(245, 248, 251, 1);
+}
+
+.sidebar__link {
+  display: block;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(245, 248, 251, 1);
 }
