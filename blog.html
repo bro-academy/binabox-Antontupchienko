@@ -11,54 +11,62 @@
 <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body class="page">
-  <header class="header">
-    <a href="#" class="header__logo">
-      <img src="#" alt="BINABOX logo" class="header__logo-img"></a>
-    <nav class="header__nav">
-      <ul class="header__nav-list">
-        <li class="header__nav-item">
-          <a href="#" class="header__nav-link header__nav-link--active">
-            Home
-          </a>
-        </li>
-        <li class="header__nav-item">
-          <a href="#" class="header__nav-link">
-            Blog
-          </a>
-        </li>
-        <li class="header__nav-item">
-          <a href="#" class="header__nav-link">
-            Catalog
-          </a>
-        </li>
-        <li class="header__nav-item">
-          <a href="#" class="header__nav-link">
-            Contact Us
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <a href="#" class="header__discord"> 
-      <img src="#" alt="diskord logo" class="header__discord-icon">
-      <p class="header__discord-text">Discord</p>
-    </a>
-    <button type="button" class="header__login-btn">
-    <img src="#" alt="Log In" class="header__login-icon"/>
-    </button>
-  </header>
+   <header class="header">
+      <a href="#" class="header__logo">
+        <img src="png/Logosbinabox.png" alt="BINABOX" class="header__logo-img">
+      </a>
+      <nav class="header__nav nav">
+        <ul class="header__nav-list nav__list">
+          <li class="header__nav-item nav__item">
+            <a href="#" class="header__nav-link nav__link nav__link--active">
+              Home
+            </a>
+          </li>
+          <li class="header__nav-item nav__item">
+            <a href="#" class="header__nav-link nav__link">
+              Blog
+            </a>
+          </li>
+          <li class="header__nav-item nav__item">
+            <a href="#" class="header__nav-link nav__link">
+              Catalog
+            </a>
+          </li>
+          <li class="header__nav-item nav__item">
+            <a href="#" class="header__nav-link nav__link">
+              Contact Us
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__controls">
+      <button class="btn btn--search">
+        <img src="#" alt="Search" class="btn__icon">
+        <span class="btn__text">Search</span>
+      </button>
+      <a href="#" class="btn btn--outline btn--discord"> 
+        <img src="#" alt="diskord logo" class="btn__icon">
+        <span class="btn__text">Discord</span>
+      </a>
+      <button class="btn btn--primary btn--login">
+        <img src="icon-login.svg" alt="" class="btn__icon">
+        <span class="btn__text">Log In</span>
+      </button>
+      </div>
+    </header>
   <main class="main">
     <section class="breadcrumbs">
       <h1 class="breadcrumbs__title">Our blog</h1>
-      <nav class="breadcrumbs__nav">
-        <ul class="breadcrumbs__list">
-          <li class="breadcrumbs__item">
-            <a href="index.html" class="breadcrumbs__link">Home</a>
+      <nav class="breadcrumbs__nav nav">
+        <ul class="breadcrumbs__list nav__list">
+          <li class="breadcrumbs__item nav__item">
+            <a href="index.html" class="breadcrumbs__link nav__link">Home</a>
           </li>
-          <li class="breadcrumbs__item">
-            <a href="#" class="breadcrumbs__link">Our blog</a>
+          <li class="breadcrumbs__item nav__item">
+            <a href="#" class="breadcrumbs__link nav__link">Our blog</a>
           </li>
-          <li class="breadcrumbs__item">
-            <a href="#" class="breadcrumbs__link">The Basilisks NFT</a>
+          <li class="breadcrumbs__item nav__item">
+            <a href="#" class="breadcrumbs__link nav__link">The Basilisks NFT</a>
           </li>
         </ul>
       </nav>
@@ -111,11 +119,11 @@
       </ul>
     </aside>
     <section class="post-section">
-      <figure class="post__figure">
-        <img src="/dragon.png" alt="dragon" class="post__image">
-        <figcaption class="post__caption">A Basilisk enters the arena — its emerald scales shimmer with encoded rage.</figcaption>
+      <figure class="figure post__figure">
+        <img src="/dragon.png" alt="dragon" class="figure__image">
+        <figcaption class="figure__caption">A Basilisk enters the arena — its emerald scales shimmer with encoded rage.</figcaption>
       </figure>
-      <h2 class="post__title">The Basilisks NFT</h2>
+      <h2 class="post__title section-title">The Basilisks NFT</h2>
       <a href="#" class="post__category">Gaming</a>
       <img src="/personal_icon" alt="icon for contact" class="post__meta-icon">
       <p class="post__author">Tony Nguyen</p>
@@ -145,21 +153,21 @@
           <p class="post__feature-text">Metaverse integration</p>
         </li>
       </ul>
-        <blockquote class="post__quote">
-          <p class="post__quote-text">“The first huge metaverse arena to arrange live sports, hang out and even make bets and wagers”</p>
-          <div class="post__quote-meta">
-            <img src="images/rating_icon.svg" alt="Rating" class="post__quote-icon">
-            <p class="post__quote-rate">8.5/10</p>
-            <cite class="post__quote-cite">Markout Corporation</cite>
+        <blockquote class="quote post__quote">
+          <p class="quote__text">“The first huge metaverse arena to arrange live sports, hang out and even make bets and wagers”</p>
+          <div class="quote__meta">
+            <img src="images/rating_icon.svg" alt="Rating" class="quote__icon">
+            <p class="quote__rate">8.5/10</p>
+            <cite class="quote__cite">Markout Corporation</cite>
           </div>
         </blockquote>
-          <figure class="post__figure post__figure--small">
-            <img src="/dragon_small.png" alt="dragon left" class="post__image" loading="lazy">
-            <figcaption class="post__caption">Close-up of a Gen-3 Basilisk. Eyes trained by code.</figcaption>
+          <figure class="figure post__figure post__figure--small">
+            <img src="/dragon_small.png" alt="dragon left" class="figure__image" loading="lazy">
+            <figcaption class="figure__caption">Close-up of a Gen-3 Basilisk. Eyes trained by code.</figcaption>
           </figure>
-          <figure class="post__figure post__figure--small">
-            <img src="/dragon_small2.png" alt="dragon right" class="post__image" loading="lazy">
-            <figcaption class="post__caption">A bonded Basilisk with its summoner. Loyalty is minted — not earned.</figcaption>
+          <figure class="figure post__figure post__figure--small">
+            <img src="/dragon_small2.png" alt="dragon right" class="figure__image" loading="lazy">
+            <figcaption class="figure__caption">A bonded Basilisk with its summoner. Loyalty is minted — not earned.</figcaption>
         </figure>
       <h3 class="post__subtitle">NFTs are digital assets that represent real-world objects</h3>
       <p class="post__text">Setting up your avatar and personalizing your nickname on Binance is quick and easy. Users can go to binance.com under Dashboard > Settings > My Profile > Avatar and Nickname. For those of you who own NFT assets, you can select the NFT you want to use from your collection as your avatar to personalize your profile. For users who do not own any NFT avatars, check out the NFT avatar collections page to get started.</p>
@@ -199,72 +207,74 @@
     </section>
   </main>
   <footer class="footer">
-    <a href="#" class="footer__logo-link">
-      <img src="logo.png" alt="Logo BINABOX" class="footer__logo-img">
-    </a>
-  <p class="footer__description">We are the best way to check the rarity of NFT collection</p>
-      <h2 class="footer__nav-title">Navigation</h2>
-      <nav class="footer__nav">
-        <ul class="footer__nav-list">
-          <li class="footer__nav-item">
-            <a href="#" class="footer__nav-link">Home</a>
+      <a href="#" class="footer__logo-link">
+        <img src="#" alt="BINABOX logo" class="footer__logo-img">
+      </a>
+      <p class="footer__description">
+        We are the best way to check the rarity of NFT collection
+      </p>
+      <h2 class="footer__nav-title section-title">Navigation</h2>
+      <nav class="footer__nav nav">
+        <ul class="footer__list nav__list">
+          <li class="footer__item nav__item">
+            <a href="#" class="footer__link nav__link">Home</a>
           </li>
-          <li class="footer__nav-item">
-            <a href="#" class="footer__nav-link">Blog</a>
+          <li class="footer__item nav__item">
+            <a href="#" class="footer__link nav__link">Blog</a>
           </li>
-          <li class="footer__nav-item">
-            <a href="#" class="footer__nav-link">Catalog</a>
+          <li class="footer__item nav__item">
+            <a href="#" class="footer__link nav__link">Catalog</a>
           </li>
-          <li class="footer__nav-item">
-            <a href="#" class="footer__nav-link">Contact Us</a>
+          <li class="footer__item nav__item">
+            <a href="#" class="footer__link nav__link">Contact Us</a>
           </li>
-          <li class="footer__nav-item">
-            <a href="#" class="footer__nav-link">Terms & Conditions</a>
+          <li class="footer__item nav__item">
+            <a href="#" class="footer__link nav__link">Terms & Conditions</a>
           </li>
-          <li class="footer__nav-item">
-            <a href="#" class="footer__nav-link">Privacy Policy</a>
+          <li class="footer__item nav__item">
+            <a href="#" class="footer__link nav__link">Privacy Policy</a>
           </li>
-          <li class="footer__nav-item">
-            <a href="#" class="footer__nav-link">Whitepaper</a>
+          <li class="footer__item nav__item">
+            <a href="#" class="footer__link nav__link">Whitepaper</a>
           </li>
-          <li class="footer__nav-item">
-            <a href="#" class="footer__nav-link">Help Center</a>
+          <li class="footer__item nav__item">
+            <a href="#" class="footer__link nav__link">Help Center</a>
           </li>
         </ul>
       </nav>
-          <p class="footer__copyright">BINABOX 2025 - ALL rights reserved</p>
-          <ul class="footer__social-list">
-            <li class="footer__social-item">
-              <a href="#" class="footer__social-link">Twitter
-                <img src="#" alt="TW" class="footer__social-icon"/>
+        <p class="footer__copy footer__copyright">BINABOX 2025 - ALL rights reserved</p>
+          <ul class="footer__social footer-social">
+            <li class="footer__link footer-social__item">>
+              <a href="#"  class="footer__social-link footer-social__link">Twitter
+                <img src="#" alt="TW" class="footer__link-img footer-social__icon"/>
               </a>
             </li>
-            <li class="footer__social-item">
-              <a href="#" class="footer__social-link">Facebook 
-                <img src="#" alt="fb" class="footer__social-icon"/> 
+            <li class="footer__link footer-social__item">>
+              <a href="#" class="footer__social-link footer-social__link">Facebook 
+                <img src="#" alt="fb" class="footer__link-img footer-social__icon"/> 
               </a>
             </li>
-            <li class="footer__social-item">
-              <a href="#" class="footer__social-link">Telegram 
-                <img src="#" alt="T" class="footer__social-icon"/>
+            <li class="footer__link footer-social__item">>
+              <a href="#" class="footer__social-link footer-social__link">Telegram 
+                <img src="#" alt="T" class="footer__link-img footer-social__icon"/>
               </a>
             </li>
-            <li class="footer__social-item">
-              <a href="#" class="footer__social-link">YouTube
-                <img src="#" alt="in" class="footer__social-icon"/> 
+            <li class="footer__link footer-social__item">>
+              <a href="#" class="footer__social-link footer-social__link">YouTube
+                <img src="#" alt="in" class="footer__link-img footer-social__icon"/> 
               </a>
             </li>
-            <li class="footer__social-item">
-              <a href="#" class="footer__social-link">Tik-tok
-                <img src="#" alt="in" class="footer__social-icon"/> 
+            <li class="footer__link footer-social__item">>
+              <a href="#" class="footer__social-link footer-social__link">Tik-tok
+                <img src="#" alt="in" class="footer__link-img footer-social__icon"/> 
               </a>
             </li>
-            <li class="footer__social-item">
-              <a href="#" class="footer__social-link">Discord
-                <img src="#" alt="in" class="footer__social-icon"/> 
+            <li class="footer__link footer-social__item">>
+              <a href="#" class="footer__social-link footer-social__link">Discord
+                 <img src="#" alt="in" class="footer__link-img footer-social__icon"/> 
               </a>
             </li>
           </ul>
-  </footer>
+    </footer>
 </body>
 </html>
