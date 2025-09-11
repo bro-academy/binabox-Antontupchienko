@@ -1,0 +1,59 @@
+.hero {
+    & padding: 48px 0;
+}
+
+.hero {
+  padding: 48px 0;
+}
+
+.hero__title {
+  font-family: 'Bakbak One', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 62px;
+  letter-spacing: -0.5px;
+  color: rgba(245, 248, 251, 1);
+  text-align: center;
+}
+
+.hero__subtitle {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: rgba(217, 217, 217, 1);
+  text-align: center;
+  margin-top: 12px;
+}
+
+.hero__stats {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 8px 24px;
+  align-items: end;
+  justify-content: center;
+  margin: 24px 0;
+}
+
+.hero__stat-value {
+  font-family: 'Bakbak One', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 62px;
+  letter-spacing: -0.5px;
+  color: rgba(245, 248, 251, 1);
+}
+
+.hero__stat-value--primary {
+}
+
+.hero__stat-value--secondary {
+}
+
+.hero__stat-label {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(239, 245, 250, 0.82);
+}

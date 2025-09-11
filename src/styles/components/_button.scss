@@ -1,0 +1,72 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 24px;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 2px solid transparent;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+
+.btn__icon {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+.btn__text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.btn--primary {
+  background-color: rgba(2, 101, 220, 1);
+  border-color: rgba(2, 101, 220, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.btn--outline {
+  background-color: transparent;
+  border-color: rgba(208, 215, 251, 0.17);
+  color: rgba(245, 248, 251, 1);
+}
+
+.btn--search {
+  width: 188px;
+  height: 48px;
+  padding: 8px 12px;
+  background-color: rgba(13, 13, 21, 1);
+  border-color: rgba(208, 215, 251, 0.17);
+  border-radius: 0;
+}
+
+.btn--login {
+  width: 134px;
+  height: 48px;
+}
+
+.btn--discord {
+  width: 150px;
+  height: 48px;
+  border-color: rgba(208, 215, 251, 0.17);
+}
+
+.btn--large {
+  padding: 12px 28px;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.btn--lg {
+  padding: 12px 28px;
+  font-size: 18px;
+  line-height: 28px;
+}
