@@ -32,7 +32,7 @@
       </ul>
     </nav>
     <div class="header__controls">
-      <button class="button button--ghost">
+      <button class="button button--search">
         <img class="button__icon" src="#" alt="Search">
         <span class="button__text">Search</span>
       </button>
@@ -47,20 +47,20 @@
     </div>
   </header>
   <main class="main">
-    <section class="Banner">
-      <h1 class="Banner__title">Our blog</h1>
-      <nav class="breadcrumbs">
-        <ul class="breadcrumbs__list">
-          <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="index.html">Home</a>
-          </li>
-          <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="#">Our blog</a>
-          </li>
-          <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="#">The Basilisks NFT</a>
-          </li>
-        </ul>
+    <section class="banner">
+      <h1 class="banner__title">Our blog</h1>
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a href="/" class="breadcrumbs__link">Home</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="/blog" class="breadcrumbs__link">Blog</a>
+        </li>
+        <li class="breadcrumbs__item breadcrumbs__item--current">
+          <span class="breadcrumbs__link breadcrumbs__link--current">Post</span>
+        </li>
+      </ul>
       </nav>
     </section>
     <aside class="sidebar">
@@ -115,7 +115,7 @@
         </ul>
       </div>
     </aside>
-    <section class="post-section">
+    <section class="post">
       <figure class="post__figure">
         <img class="post__image" src="/dragon.png" alt="dragon">
         <figcaption class="post__caption">
